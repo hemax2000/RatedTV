@@ -1,0 +1,542 @@
+/*!
+ * Project_Name: Themezy Movie Review
+ * Author: Themezy
+ * Email: info@themezy.com
+ * URL: http://themezy.com
+ */
+/*=========================================== 
+ * Importing CSS Libraries
+ *===========================================*/
+
+
+figure,
+
+header,
+
+nav,
+section,
+summary {
+  display: block; 
+
+}
+
+
+html {
+  background: #fff;
+  color: #000;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+body {
+  margin: 0; }
+
+a {
+  background: transparent; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0; }
+
+
+
+strong {
+  font-weight: bold; }
+
+
+
+small {
+  font-size: 80%; }
+
+
+
+img {
+  border: 0; }
+
+
+
+figure {
+  margin: 0; 
+  }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline; }
+
+button,
+input {
+  line-height: normal; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"]
+ {
+ 
+  cursor: pointer; }
+
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"],
+input[type="radio"] {
+
+       box-sizing: border-box;
+  padding: 0; }
+
+input[type="search"] {
+
+  box-sizing: content-box; }
+
+ 
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+       box-sizing: border-box; }
+
+/*
+ * Global Styles
+ */
+/*background*/
+
+body {
+   
+  background-color: #131a20;
+  
+  color: #84878d;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0 0 20px; }
+
+hr {
+  border: none;
+  border-bottom: 1px solid #777; }
+
+ul, ol {
+  margin: 0;
+  padding-left: 0; }
+
+a {
+  text-decoration: none;
+  color: #ffaa3c; }
+
+address {
+  font-style: normal; }
+
+p {
+  margin-top: 0; }
+
+form input, form textarea, form select {
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none; }
+form select {
+
+  appearance: none; }
+form textarea {
+  resize: vertical; }
+
+/*
+ * Reusable Components Style
+ */
+/*log in page*/
+
+/*--------------------------------------*/
+
+.back {
+ 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+ background-size:cover; 
+    filter: blur(10px);
+   
+background-image: url("https://i0.wp.com/thebutlercollegian.com/wp-content/uploads/2019/03/netflix-image.jpg?w=1920&ssl=1");
+
+
+}
+
+
+.breadcrumbs {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ebebeb; }
+  .breadcrumbs a {
+    font-weight: 400;
+    color: #9ea1a6; }
+    .breadcrumbs a:after {
+      content: " ";
+      width: 8px;
+      height: 5px;
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 10px;
+      background: url(images/arrow-gray.png) no-repeat; }
+    .breadcrumbs a:hover {
+      color: #ffaa3c; }
+  .breadcrumbs span {
+    color: #84878d; }
+
+
+/* Star rating style */
+.star-rating {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  top: 2px;
+  height: 1em;
+  line-height: 1.1;
+  font-size: 15px;
+  font-size: 1em;
+  width: 4.7em;
+  font-family: "FontAwesome"; }
+
+.star-rating:before {
+  content: "\f005\f005\f005\f005\f005";
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute; }
+
+.star-rating span {
+  overflow: hidden;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding-top: 1.5em; }
+
+.star-rating span:before {
+  content: "\f005\f005\f005\f005\f005";
+  top: 0;
+  position: absolute;
+  left: 0;
+  color: #ffaa3c; }
+
+
+.container {
+        
+position:relative;
+    z-index: 2;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  zoom: 1; 
+overflow: hidden;
+  background-color: #131a20;
+box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+}
+  .container:after {
+    
+    content: " ";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0; }
+  @media (min-width: 768px) {
+    .container {
+       
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  *zoom: 1; }
+  .row:after {
+    content: " ";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0; }
+
+  .col-md-6, .col-lg-6, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+
+  .col-md-6 {
+    width: 50%; }
+
+ 
+ 
+
+/*
+ * Header Styles
+ */
+.site-header {
+  padding-top: 50px;
+  *zoom: 1; }
+  .site-header:after {
+    content: " ";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0; }
+
+#branding {
+   position:relative;
+   top:20px;
+  float: left;
+padding-bottom: 20px}
+  #branding .logo, #branding .logo-copy {
+    display: inline-block; }
+  #branding .logo {
+    margin-right: 10px; }
+  #branding .site-title {
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    font-size:16px;
+    font-size: 2.0666666667em; }
+    #branding .site-title a {
+      color: white; }
+  #branding .site-description {
+    font-size: 13px;
+    font-size: 1.3666666667em;
+    color: #9198af; }
+
+.main-navigation {
+  float: right;
+    /*edit*/
+ 
+  border-radius: 5px; }
+  .main-navigation .menu-toggle, .main-navigation .menu, .main-navigation 
+  .main-navigation .menu-toggle {
+    color: #333;
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-size: 1.2em;
+    padding: 8px 15px;
+    display: none;
+    outline: none; }
+    @media screen and (max-width: 990px) {
+      .main-navigation .menu-toggle {
+        display: inline-block; } }
+    @media screen and (min-width: 991px) {
+      .main-navigation .menu-toggle {
+        display: none !important; } }
+  .main-navigation .menu {
+    list-style: none;
+    margin: 0; }
+    @media screen and (min-width: 991px) {
+      .main-navigation .menu {
+        display: inline-block !important; } }
+    @media screen and (max-width: 990px) {
+      .main-navigation .menu {
+        display: none; } }
+  .main-navigation .menu-item {
+    display: inline-block;
+    padding: 10px 0; }
+    .main-navigation .menu-item a {
+      padding: 0 15px;
+      display: inline-block;
+      color: #84878d;
+      font-size: 14px;
+      font-size: 0.9333333333em;
+      font-weight: 400;
+      line-height: 1;
+      border-right: 1px solid #eeeeef; }
+    .main-navigation .menu-item.current-menu-item, .main-navigation .menu-item:hover {
+      position: relative; }
+      .main-navigation .menu-item.current-menu-item:after, .main-navigation .menu-item:hover:after {
+        content: " ";
+        position: absolute;
+        width: 80%;
+        height: 3px;
+          /*edit*/
+        background-color: #84878d;
+        bottom: -3px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block; }
+ 
+  
+
+.main-content .container {
+ 
+  padding: 30px; }
+
+
+.page figure {
+  margin-bottom: 30px; }
+.page img {
+  max-width: 100%; }
+.page .movie-title {
+  font-size: 36px;
+  font-size: 2.4em;
+  font-weight: 300; }
+
+.filters {
+  margin-bottom: 50px; }
+  .filters select {
+    appearance: none;
+    padding: 10px 50px 10px 10px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    outline: none;
+    background-image: url(images/select.png);
+    background-repeat: no-repeat;
+    background-position: 100% center; }
+
+.movie-list {
+  margin: 0 -15px; }
+  .movie-list .movie {
+    width: 25%;
+    padding: 0 15px;
+    float: left;
+    margin-bottom: 30px; }
+    @media screen and (min-width: 991px) {
+      .movie-list .movie:nth-child(4n+1) {
+        clear: both; } }
+    @media screen and (max-width: 990px) {
+      .movie-list .movie {
+        width: 50%; }
+        .movie-list .movie:nth-child(4n+1) {
+          clear: none; }
+        .movie-list .movie:nth-child(2n+1) {
+          clear: both; } }
+    @media screen and (max-width: 480px) {
+      .movie-list .movie {
+        width: 100%;
+        clear: both; } }
+    .movie-list .movie .movie-poster {
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      border: 1px solid transparent; }
+      .movie-list .movie .movie-poster img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+                transition: .3s ease; }
+    .movie-list .movie:hover img {
+              transform: scale(1.2); }
+    .movie-list .movie .movie-title {
+      font-size: 24px;
+      font-size: 1.6em;
+      font-weight: 300;
+      margin-bottom: 20px; }
+      .movie-list .movie .movie-title a {
+        color: #84878d;
+        -webkit-transition: .3s ease;
+                transition: .3s ease; }
+        .movie-list .movie .movie-title a:hover {
+          color: #ffaa3c; }
+
+.pagination {
+  clear: both;
+  text-align: center; }
+  .pagination .page-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: #e7e7e7;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    line-height: 2.6;
+    color: #84878d;
+    font-size: 15px;
+    font-size: 1em;
+  
+            transition: .3s ease; }
+    .pagination .page-number.current, .pagination .page-number:hover {
+        /*edit*/
+      background:#84878d;
+      color: white; }
+
+.movie-meta, .starring {
+  margin-bottom: 30px;
+  list-style: none; }
+  .movie-meta li, .starring li {
+    margin-bottom: 10px; }
+/* alart Style  */
+    .alert {
+      position: relative;
+      padding: 1rem 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+    }
+    .alert-danger {
+      color: #842029;
+      background-color: #f8d7da;
+      border-color: #f5c2c7;
+    }.alert-danger .alert-link {
+      color: #6a1a21;
+    }
+    .alert-success {
+      color: #0f5132;
+      background-color: #d1e7dd;
+      border-color: #badbcc;
+    }
+    .alert-success .alert-link {
+      color: #0c4128;
+    }
