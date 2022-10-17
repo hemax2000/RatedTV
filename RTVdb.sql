@@ -149,8 +149,8 @@ INSERT INTO `ratings` (`userId`, `movieId`, `rating`, `isvirtual`, `comment`) VA
 
 CREATE TABLE `users` (
   `userId` int(10) NOT NULL,
-  `email` varchar(64) DEFAULT current_timestamp(),
-  `password` varchar(64) DEFAULT current_timestamp(),
+  `email` varchar(64) ,
+  `password` varchar(64) ,
   `username` varchar(256) CHARACTER SET utf8 NOT NULL,
   `Size` int(2) NOT NULL DEFAULT 4,
   `gender` varchar(16) NOT NULL,
