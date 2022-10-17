@@ -41,8 +41,7 @@ $i=0;
 	</head>
 
     <div class="back"></div>
-	<body Style=" 
-background-image: https://i0.wp.com/thebutlercollegian.com/wp-content/uploads/2019/03/netflix-image.jpg?w=1920&ssl=1") >
+	<body Style="background-image: https://i0.wp.com/thebutlercollegian.com/wp-content/uploads/2019/03/netflix-image.jpg?w=1920&ssl=1") >
 		
 
 		<div id="site-content"> 
